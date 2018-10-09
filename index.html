@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header>
+       <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#SWOT/TOWS">SWOT/TOWS</a>
+                <a href="#Målgruppe indsigt">Målgruppe indsigt</a>
+                <a href="#Idegenereing">Idegenereing + koncept</a>
+                <a href="#Fastsatte">Fastsatte KPI'er</a>
+                <a href="#Customer">Customer journey visualisering</a>
+                <a href="#Indholdsplan">Indholdsplan til SoMe</a>
+                <a href="#Storyboard">Storyboards</a>
+                <a href="#Repository">link til github</a>
+                <a href="#Personas">Personas</a>
+                <a href="#Previz">Previz</a>
+            </div>
+        </div>
+   </header>
+
+   <main>
+       <h2 id="SWOT/TOWS">SWOT/TOWS</h2>
+       <a href=""></a>
+       <h2 id="Målgruppe indsigt">Målgruppe indsigt + overvejelser</h2>
+       <a href=""></a>
+       <h2 id="Idegenereing">Idegenereing + koncept</h2>
+       <a href=""></a>
+       <h2 id="Fastsatte">Fastsatte KPI'er</h2>
+       <a href=""></a>
+       <h2 id="Customer">Customer journey visualisering</h2>
+       <a href=""></a>
+       <h2 id="Indholdsplan">Indholdsplan til SoMe</h2>
+       <a href=""></a>
+       <h2 id="Storyboard">Storyboard for kampagnevideo + mini explainer</h2>
+       <a href=""></a>
+       <h2 id="Repository">Repository med udvikling af website (link til github)</h2>
+       <a href=""></a>
+       <h2 id="Personas">Personas</h2>
+       <a href=""></a>
+       <h2 id="Previz">Previz / Moodboards</h2>
+       <a href=""></a>
+   </main>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Noto+Serif+KR';
+    font-size: 22px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+
+
+header {
+    background-color: #00b9ea;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 850px;
+    background-position: center;
+}
+
+
+/***************************************MENY START******************************************/
+
+button {
+    display: none;
+}
+
+a {
+    padding: 1px;
+    text-decoration: none;
+}
+
+
+.dropdown-content {
+    font-size: 100%;
+    color: black;
+    text-align: center;
+}
+
+.dropdown-content {
+    position: relative;
+    top: 148px;
+}
+
+.dropdown-content a {
+    padding: 7px 15px;
+    text-decoration: none;
+    font-size: 100%;
+    white-space: nowrap;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+/***************************************MENY SLUT******************************************/
+
+/*************************************MAX WIDTH:480PX**************************************/
+
+@media screen and (max-width:1000px) {
+    body {
+        display: grid;
+        grid-template-rows: 170px 500px;
+    }
+
+    header {
+        background-size: 340px;
+    }
+
+    /***************************************MENY START******************************************/
+    button {
+        display: block;
+    }
+
+    a {
+        padding: 1px;
+        text-decoration: none;
+    }
+
+    .dropbtn {
+        background-color: #032846;
+        background-size: 52px;
+        color: white;
+        padding: 22px 22px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 119px;
+        left: 6px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        top: 120px;
+        left: 0px;
+        z-index: 1;
+        background-color: #00b9ea;
+    }
+
+    .dropdown-content a {
+        padding: 7px 7px;
+        text-decoration: none;
+        display: block;
+        letter-spacing: 1px;
+        font-size: 100%;
+        white-space: nowrap;
+        color: black;
+        text-align: left;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-image: url(img/logo3.png);
+    }
+
+    .dropdown-content a:hover {
+        color: white;
+    }
+
+    .show {
+        display: block;
+    }
+    /***************************************MENY SLUT******************************************/
+}
